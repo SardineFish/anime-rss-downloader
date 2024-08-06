@@ -1,0 +1,15 @@
+certifi==2024.7.4
+charset-normalizer==3.3.2
+feedparser==6.0.11
+idna==3.7
+pkg_resources==0.0.0
+PySocks==1.7.1
+python-dateutil==2.9.0.post0
+PyYAML==6.0.1
+requests==2.32.3
+schedule==1.2.2
+sgmllib3k==1.0.0
+six==1.16.0
+transmission-rpc==7.0.10
+typing_extensions==4.12.2
+urllib3==2.2.2

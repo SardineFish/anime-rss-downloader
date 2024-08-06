@@ -1,0 +1,23 @@
+transmission_rpc_host: 127.0.0.1
+transmission_rpc_port: 9091
+transmission_rpc_passwd: null
+transmission_rpc_user: null
+default_download_dir: /path/to/download/dir
+# Use proxy to fetch RSS feeds. `null` value or remove it to disable.
+global_proxy: null
+task:
+- name: "喵萌奶茶屋 - Monogatari Series: Off & Monster Season"
+  rss: https://mikanani.me/RSS/Bangumi?bangumiId=3380&subgroupid=382
+  # Download directory for this anime. Remove it to use `default_download_dir`
+  save_to: /path/to/download/monogatari
+  # Download episodes published after the given time.
+  since: "2024-08-04 19:27:00"
+  # Download item only if the title matches following rules. Use regex.
+  title_match:
+  - 简日双语
+- name: Shoushimin Series
+  rss: https://mikanani.me/RSS/Bangumi?bangumiId=3392&subgroupid=382
+  # Also allow unix timestamp
+  since: 1722914580
+  title_match:
+  - 简日双语|简体
